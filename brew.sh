@@ -54,7 +54,6 @@ brew install awscli
 brew install wget
 brew install jq
 brew install dark-mode
-brew install awscli
 brew install cassandra
 brew install python
 brew install terraform
@@ -65,6 +64,7 @@ brew install tree
 brew install curl
 brew install fontconfig
 brew install tldr
+brew install avro-tools
 
 # Remove outdated versions from the cellar.
 brew cleanup
