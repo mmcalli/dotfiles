@@ -4,5 +4,5 @@ https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare
 
 Other websites worth visiting:-
 
-https://github.com/mathiasbynens/dotfiles
-https://dotfiles.github.io/
+* https://github.com/mathiasbynens/dotfiles
+* https://dotfiles.github.io/
