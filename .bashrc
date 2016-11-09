@@ -13,3 +13,10 @@ fi
 
 PATH=$PATH:/Users/mmcallister/Software/confluent-3.0.1/bin
 alias config='/usr/bin/git --git-dir=/Users/mmcallister/.cfg/ --work-tree=/Users/mmcallister'
+
+# If the default docker machine is started then make sure
+# the docker environment variables are created
+
+if [[ $(docker-machine status) != "Stopped" ]]; then 
+	eval $(docker-machine env default); 
+fi
