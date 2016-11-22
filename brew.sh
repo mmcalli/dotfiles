@@ -40,6 +40,7 @@ brew tap homebrew/science
 # brew install caskroom/cask/xquartz
 # brew cask install rstudio
 # brew cask install intellij-idea
+# brew cask install caffeine
 
 # 
 
@@ -51,6 +52,7 @@ brew install jmeter
 brew install git
 brew install liquidprompt
 brew install awscli
+brew install aws-shell
 brew install wget
 brew install jq
 brew install dark-mode
@@ -65,6 +67,16 @@ brew install curl
 brew install fontconfig
 brew install tldr
 brew install avro-tools
+brew install bash-completion
+brew install geoip
+brew install geoipupdate
+brew install htop
+brew install ponysay
+brew install watch
+
+# Update the geoip database
+
+geoipupdate
 
 # Remove outdated versions from the cellar.
 brew cleanup
