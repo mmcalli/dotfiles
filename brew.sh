@@ -31,6 +31,7 @@ brew tap homebrew/science
 # brew cask install java7
 # brew cask install 1password
 # brew cask install google-chrome
+# brew cask install google-chrome-canary
 # brew cask install alfred
 # brew cask install dropbox
 # brew cask install skitch
@@ -41,6 +42,8 @@ brew tap homebrew/science
 # brew cask install rstudio
 # brew cask install intellij-idea
 # brew cask install caffeine
+# brew cask install postman
+# brew cask install sizeup
 
 # 
 

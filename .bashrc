@@ -17,7 +17,7 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 . $(brew --prefix)/etc/bash_completion
 fi
 
-PATH=$PATH:/Users/mmcallister/Software/confluent-3.0.1/bin
+PATH=$PATH:/Users/mmcallister/bin/confluent/current/bin
 
 #Add a config alias to maintain dotfiles repo
 alias config='/usr/bin/git --git-dir=/Users/mmcallister/.cfg/ --work-tree=/Users/mmcallister'
