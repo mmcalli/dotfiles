@@ -22,27 +22,30 @@ brew tap homebrew/science
 # Caskroom installs we only want to do once. They can't be updated
 # by brew at the moment
 #
-# brew install caskroom/cask/brew-cask
-# brew cask install font-inconsolata
-# brew cask install sublime-text3
-# brew cask install iterm2
-# brew cask install evernote
-# brew install Caskroom/cask/java
-# brew cask install java7
-# brew cask install 1password
-# brew cask install google-chrome
-# brew cask install google-chrome-canary
-# brew cask install alfred
-# brew cask install dropbox
-# brew cask install skitch
-# brew cask install rstudio
-# brew cask install dbvisualizer
-# brew cask install tableau
-# brew install caskroom/cask/xquartz
-# brew cask install rstudio
-# brew cask install intellij-idea
-# brew cask install caffeine
-# brew cask install postman
+brew install caskroom/cask/brew-cask
+brew cask install font-inconsolata
+brew cask install sublime-text
+brew cask install iterm2
+brew cask install evernote
+brew install Caskroom/cask/java
+brew cask install java7
+brew cask install 1password
+brew cask install google-chrome
+brew cask install google-chrome-canary
+brew cask install alfred
+brew cask install dropbox
+brew cask install skitch
+brew cask install rstudio
+brew cask install dbvisualizer
+brew cask install tableau
+brew install caskroom/cask/xquartz
+brew cask install rstudio
+brew cask install intellij-idea
+brew cask install caffeine
+brew cask install postman
+brew cask install slack
+brew cask install bartender
+brew cask install google-drive
 # brew cask install sizeup
 
 # 
