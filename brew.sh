@@ -19,7 +19,7 @@ brew tap caskroom/fonts
 brew tap caskroom/versions
 brew tap homebrew/science
 
-# Caskroom installs we only want to do once. They can't be updated
+# Caskroom installs we only want to dropbox once. They can't be updated
 # by brew at the moment
 #
 brew install caskroom/cask/brew-cask
@@ -46,6 +46,7 @@ brew cask install postman
 brew cask install slack
 brew cask install bartender
 brew cask install google-drive
+brew cask install virtualbox
 # brew cask install sizeup
 
 # 
@@ -79,6 +80,9 @@ brew install geoipupdate
 brew install htop
 brew install ponysay
 brew install watch
+brew install docker
+brew install docker-machine
+brew install docker-compose
 
 # Update the geoip database
 
