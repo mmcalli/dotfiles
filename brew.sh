@@ -49,6 +49,7 @@ brew install caskroom/cask/brew-cask
 #brew cask install virtualbox
 #brew cask install sizeup
 #brew cask install lingon-x
+#brew cask install franz
 
 # 
 
@@ -81,9 +82,6 @@ brew install geoipupdate
 brew install htop
 brew install ponysay
 brew install watch
-brew install docker
-brew install docker-machine
-brew install docker-compose
 
 # Update the geoip database
 
