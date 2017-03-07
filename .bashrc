@@ -22,9 +22,13 @@ PATH=$PATH:/Users/mmcallister/bin/confluent/current/bin
 #Add a config alias to maintain dotfiles repo
 alias config='/usr/bin/git --git-dir=/Users/mmcallister/.cfg/ --work-tree=/Users/mmcallister'
 
+# Let the compiler know where OpenSSL is
+export LDFLAGS=-L/usr/local/opt/openssl/lib
+export CPPFLAGS=-I/usr/local/opt/openssl/include
+
 # If the default docker machine is started then make sure
 # the docker environment variables are created
 
-if [[ $(docker-machine status) != "Stopped" ]]; then 
-	eval $(docker-machine env default); 
-fi
+#if [[ $(docker-machine status) != "Stopped" ]]; then 
+#	eval $(docker-machine env default); 
+#fi
