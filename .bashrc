@@ -20,7 +20,7 @@ fi
 PATH=$PATH:/Users/mmcallister/bin/confluent/current/bin
 
 #Add a config alias to maintain dotfiles repo
-alias config='/usr/bin/git --git-dir=/Users/mmcallister/.cfg/ --work-tree=/Users/mmcallister'
+alias config='git --git-dir=/Users/mmcallister/.cfg/ --work-tree=/Users/mmcallister'
 
 # Let the compiler know where OpenSSL is
 export LDFLAGS=-L/usr/local/opt/openssl/lib
