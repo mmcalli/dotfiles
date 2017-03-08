@@ -82,6 +82,7 @@ brew install geoipupdate
 brew install htop
 brew install ponysay
 brew install watch
+brew install parquet-tools
 
 # Update the geoip database
 
