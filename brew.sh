@@ -50,6 +50,7 @@ brew install caskroom/cask/brew-cask
 #brew cask install sizeup
 #brew cask install lingon-x
 #brew cask install franz
+#brew cask install devcenter
 
 # 
 
