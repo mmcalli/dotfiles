@@ -22,6 +22,9 @@ PATH=$PATH:/Users/mmcallister/bin/confluent/current/bin
 #Add a config alias to maintain dotfiles repo
 alias config='git --git-dir=/Users/mmcallister/.cfg/ --work-tree=/Users/mmcallister'
 
+#Alias to use rsync instead of scp for big files
+alias scp-big='rsync -avz --progress'
+
 # Let the compiler know where OpenSSL is
 export LDFLAGS=-L/usr/local/opt/openssl/lib
 export CPPFLAGS=-I/usr/local/opt/openssl/include
