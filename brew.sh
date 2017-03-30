@@ -52,6 +52,7 @@ brew install caskroom/cask/brew-cask
 #brew cask install franz
 #brew cask install devcenter
 #brew cask install kitematic
+#brew cask install anaconda
 
 brew install maven
 brew install ansible
