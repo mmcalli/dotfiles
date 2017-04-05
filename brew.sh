@@ -84,6 +84,11 @@ brew install htop
 brew install ponysay
 brew install watch
 brew install parquet-tools
+brew install grafana
+
+# Add the kairosdb grafana plugin
+
+grafana-cli plugins install grafana-kairosdb-datasource
 
 # Update the geoip database
 
