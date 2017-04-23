@@ -25,6 +25,9 @@ alias config='git --git-dir=/Users/mmcallister/.cfg/ --work-tree=/Users/mmcallis
 #Alias to use rsync instead of scp for big files
 alias scp-big='rsync -avz --progress'
 
+#Alias ls to default to long format and human readable file sizes
+alias ls='ls -lah'
+
 # Let the compiler know where OpenSSL is
 export LDFLAGS=-L/usr/local/opt/openssl/lib
 export CPPFLAGS=-I/usr/local/opt/openssl/include
