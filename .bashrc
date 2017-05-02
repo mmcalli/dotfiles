@@ -23,7 +23,7 @@ PATH=$PATH:~/bin/confluent/current/bin:~/anaconda3/bin
 alias config='git --git-dir=/Users/mmcallister/.cfg/ --work-tree=/Users/mmcallister'
 
 #Alias to use rsync instead of scp for big files
-alias scp-big='rsync -avz --progress'
+alias scp-big='rsync -avz --progress --append-verify'
 
 #Alias ls to default to long format and human readable file sizes
 alias ls='ls -lah'
@@ -31,6 +31,9 @@ alias ls='ls -lah'
 # Let the compiler know where OpenSSL is
 export LDFLAGS=-L/usr/local/opt/openssl/lib
 export CPPFLAGS=-I/usr/local/opt/openssl/include
+
+# Get colorized listings
+export CLICOLOR=1
 
 # If the default docker machine is started then make sure
 # the docker environment variables are created
