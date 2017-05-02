@@ -85,6 +85,7 @@ brew install ponysay
 brew install watch
 brew install parquet-tools
 brew install grafana
+brew install rsync
 
 # Add the kairosdb grafana plugin
 
