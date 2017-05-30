@@ -53,6 +53,7 @@ brew install caskroom/cask/brew-cask
 #brew cask install devcenter
 #brew cask install kitematic
 #brew cask install anaconda
+#brew cask info bettertouchtool
 
 brew install maven
 brew install ansible
