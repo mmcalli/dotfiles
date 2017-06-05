@@ -87,6 +87,9 @@ brew install watch
 brew install parquet-tools
 brew install grafana
 brew install rsync
+brew install scala --with-docs --with-src
+brew install sbt
+brew install exercism
 
 # Add the kairosdb grafana plugin
 
