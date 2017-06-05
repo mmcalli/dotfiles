@@ -35,6 +35,9 @@ export CPPFLAGS=-I/usr/local/opt/openssl/include
 # Get colorized listings
 export CLICOLOR=1
 
+# Scala home setup for Intellij
+export SCALA_HOME=/usr/local/opt/scala/idea
+
 # If the default docker machine is started then make sure
 # the docker environment variables are created
 
