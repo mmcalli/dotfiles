@@ -28,6 +28,9 @@ alias scp-big='rsync -avz --progress --append-verify'
 #Alias ls to default to long format and human readable file sizes
 alias ls='ls -lah'
 
+#Alias gl to be my preferred git log summary
+alias gl='git log --pretty=oneline'
+
 # Let the compiler know where OpenSSL is
 export LDFLAGS=-L/usr/local/opt/openssl/lib
 export CPPFLAGS=-I/usr/local/opt/openssl/include

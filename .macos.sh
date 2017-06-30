@@ -238,6 +238,15 @@ defaults write com.google.Chrome.canary PMPrintingExpandedStateForPrint2 -bool t
 defaults write com.apple.LaunchServices LSHandlers -array-add '{LSHandlerContentType=public.plain-text;LSHandlerRoleAll=com.sublimetext.3;}'
 
 ###############################################################################
+# Git                                                                         #
+###############################################################################
+
+# Make Beyond Compare the git difftool and merge tool
+git config --global diff.tool bc3
+git config --global merge.tool bc3
+git config --global mergetool.bc3.trustExitCode true
+
+###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
 

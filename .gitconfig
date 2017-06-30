@@ -44,3 +44,7 @@
 	default = simple
 [credential]
 	helper = osxkeychain
+[merge]
+	tool = bc3
+[mergetool "bc3"]
+	trustExitCode = true
