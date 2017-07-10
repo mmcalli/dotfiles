@@ -35,6 +35,9 @@ alias gl='git log --pretty=oneline'
 export LDFLAGS=-L/usr/local/opt/openssl/lib
 export CPPFLAGS=-I/usr/local/opt/openssl/include
 
+# Do this so that get-aws-keys works
+unset DYLD_INSERT_LIBRARIES
+
 # Get colorized listings
 export CLICOLOR=1
 
