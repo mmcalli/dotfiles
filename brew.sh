@@ -56,6 +56,7 @@ brew install caskroom/cask/brew-cask
 #brew cask info bettertouchtool
 #brew cask install beyond-compare
 #brew cask install pycharm-ce
+#brew cask install fivedetails-flow
 
 brew install maven
 brew install ansible
@@ -92,6 +93,7 @@ brew install rsync
 brew install scala --with-docs --with-src
 brew install sbt
 brew install exercism
+brew install moreutils --without-errno --without-parallel --without-ts
 
 # Add the kairosdb grafana plugin
 
