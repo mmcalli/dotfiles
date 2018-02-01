@@ -23,12 +23,14 @@
 	fp = fetch -p
 	ft = fetch -t
 	pl = pull
+	plo = pull origin
 	ps = push
+	pso = push origin
 	sta = stash
 	log1 = log --pretty=oneline --abbrev-commit --decorate --date=relative --graph
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	lgn = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative -n10
-	lp = log         --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	lp = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	lt = describe --abbrev=0 --tags
 	tl = tag -l
 	tc = tag --contains
@@ -38,13 +40,13 @@
 [user]
 	name = Michael McAllister
 	email = mmcallister@homeaway.com
+[merge]
+	tool = bc3
+[mergetool "bc3"]
+	trustExitCode = true
 [branch]
 	autosetuprebase = always
 [push]
 	default = simple
 [credential]
 	helper = osxkeychain
-[merge]
-	tool = bc3
-[mergetool "bc3"]
-	trustExitCode = true
