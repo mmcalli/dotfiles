@@ -57,6 +57,7 @@ brew install caskroom/cask/brew-cask
 #brew cask install beyond-compare
 #brew cask install pycharm-ce
 #brew cask install fivedetails-flow
+#brew cask install snagit
 
 brew install maven
 brew install ansible
