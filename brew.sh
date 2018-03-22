@@ -59,6 +59,7 @@ brew install caskroom/cask/brew-cask
 #brew cask install fivedetails-flow
 #brew cask install snagit
 #brew cask install mactex
+#brew cask install cloudapp
 
 brew install maven
 brew install ansible
