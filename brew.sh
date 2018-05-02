@@ -97,6 +97,7 @@ brew install scala --with-docs --with-src
 brew install sbt
 brew install exercism
 brew install moreutils --without-errno --without-parallel --without-ts
+brew install miller
 
 # Add the kairosdb grafana plugin
 
