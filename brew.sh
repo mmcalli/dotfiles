@@ -84,7 +84,8 @@ brew install curl
 brew install fontconfig
 brew install tldr
 brew install avro-tools
-brew install bash-completion
+brew install bash
+brew install bash-completion@2
 brew install geoip
 brew install geoipupdate
 brew install htop
@@ -109,3 +110,10 @@ geoipupdate
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+# Add the new shell to the list of legit shells
+sudo bash -c "echo /usr/local/bin/bash >> /private/etc/shells"
+
+# Change the shell for the user
+chsh -s /usr/local/bin/bash
+

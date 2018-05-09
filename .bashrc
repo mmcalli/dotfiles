@@ -13,8 +13,8 @@ if [ -f /usr/local/share/liquidprompt ]; then
 fi
 
 #Bash Completion
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-. $(brew --prefix)/etc/bash_completion
+if [ -f /usr/local/share/bash-completion/bash_completion ]; then
+. /usr/local/share/bash-completion/bash_completion
 fi
 
 PATH=$PATH:~/bin/confluent/current/bin:~/anaconda3/bin:~/bin/utils
@@ -50,3 +50,9 @@ export SCALA_HOME=/usr/local/opt/scala/idea
 #if [[ $(docker-machine status) != "Stopped" ]]; then 
 #	eval $(docker-machine env default); 
 #fi
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/mmcallister/google-cloud-sdk/path.bash.inc' ]; then source '/Users/mmcallister/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/mmcallister/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/mmcallister/google-cloud-sdk/completion.bash.inc'; fi
