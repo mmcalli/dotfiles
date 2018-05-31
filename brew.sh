@@ -99,6 +99,8 @@ brew install sbt
 brew install exercism
 brew install moreutils --without-errno --without-parallel --without-ts
 brew install miller
+brew install elasticsearch
+brew install kibana
 
 # Add the kairosdb grafana plugin
 
@@ -117,3 +119,6 @@ sudo bash -c "echo /usr/local/bin/bash >> /private/etc/shells"
 # Change the shell for the user
 chsh -s /usr/local/bin/bash
 
+# install elasticsearch X-Pack
+cd /usr/local/Cellar/elasticsearch/6.2.4/
+bin/elasticsearch-plugin install x-pack
