@@ -9,3 +9,6 @@ fi
 
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+# added by Anaconda3 5.2.0 installer
+export PATH="/anaconda3/bin:$PATH"
