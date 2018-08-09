@@ -45,7 +45,7 @@ brew install caskroom/cask/brew-cask
 #brew cask install postman
 #brew cask install slack
 #brew cask install bartender
-#brew cask install google-drive
+#brew cask install google-drive-file-stream
 #brew cask install virtualbox
 #brew cask install sizeup
 #brew cask install lingon-x
