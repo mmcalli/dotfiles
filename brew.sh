@@ -101,6 +101,7 @@ brew install moreutils --without-errno --without-parallel --without-ts
 brew install miller
 brew install elasticsearch
 brew install kibana
+brew install teleport
 
 # Add the kairosdb grafana plugin
 
