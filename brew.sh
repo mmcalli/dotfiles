@@ -60,6 +60,7 @@ brew install caskroom/cask/brew-cask
 #brew cask install snagit
 #brew cask install mactex
 #brew cask install cloudapp
+#brew cask install monodraw
 
 brew install maven
 brew install ansible
