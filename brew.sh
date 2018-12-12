@@ -103,6 +103,7 @@ brew install miller
 brew install elasticsearch
 brew install kibana
 brew install teleport
+brew install bat
 
 # Add the kairosdb grafana plugin
 
