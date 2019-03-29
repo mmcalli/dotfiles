@@ -61,6 +61,7 @@ brew install caskroom/cask/brew-cask
 #brew cask install mactex
 #brew cask install cloudapp
 #brew cask install monodraw
+#brew cask install graphiql
 
 brew install maven
 brew install ansible
