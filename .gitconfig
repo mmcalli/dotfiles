@@ -1,6 +1,6 @@
 [core]
 	editor = subl -n -w
-	excludesfile = /Users/mmcallister/.birdhouse/.gitignore_global
+	excludesfile = /Users/mmcallister/.gitignore_global
 [alias]
 	st = status -sb
 	s = status
