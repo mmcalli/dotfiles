@@ -106,6 +106,7 @@ brew install elasticsearch
 brew install kibana
 brew install teleport
 brew install bat
+brew install lz4
 
 # Add the kairosdb grafana plugin
 
