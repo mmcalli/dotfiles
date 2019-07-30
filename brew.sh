@@ -63,6 +63,7 @@ brew install caskroom/cask/brew-cask
 #brew cask install monodraw
 #brew cask install graphiql
 #brew cask install cisco-proximity
+#brew cask install graphql-playground
 
 brew install maven
 brew install ansible
