@@ -176,6 +176,9 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 # Enable spring loading for all Dock items
 defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
 
+# Stop the Dock moving monitor
+defaults write com.apple.Dock position-immutable -bool yes
+
 ###############################################################################
 # Activity Monitor                                                            #
 ###############################################################################
