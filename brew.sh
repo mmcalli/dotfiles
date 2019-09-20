@@ -64,6 +64,7 @@ brew install caskroom/cask/brew-cask
 #brew cask install graphiql
 #brew cask install cisco-proximity
 #brew cask install graphql-playground
+#brew cask install flycut
 
 brew install maven
 brew install ansible
