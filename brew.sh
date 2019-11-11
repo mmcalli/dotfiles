@@ -111,6 +111,7 @@ brew install kibana
 brew install teleport
 brew install bat
 brew install lz4
+brew install csvkit
 
 # Add the kairosdb grafana plugin
 
