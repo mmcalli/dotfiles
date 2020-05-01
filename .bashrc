@@ -17,7 +17,7 @@ if [ -f /usr/local/share/bash-completion/bash_completion ]; then
 . /usr/local/share/bash-completion/bash_completion
 fi
 
-PATH=$PATH:~/bin/confluent/current/bin:~/anaconda3/bin:~/bin/utils
+PATH=$PATH:~/bin/confluent/current/bin:~/anaconda3/bin:~/bin/utils:/usr/local/opt/terraform@0.11/bin
 
 #Add a config alias to maintain dotfiles repo
 alias config='git --git-dir=/Users/mmcallister/.cfg/ --work-tree=/Users/mmcallister'
