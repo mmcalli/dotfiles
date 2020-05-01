@@ -83,6 +83,7 @@ brew install dark-mode
 brew install cassandra
 brew install python
 brew install terraform
+brew install terraform@0.11
 brew install pigz
 brew install pv
 brew install speedtest_cli
