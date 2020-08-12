@@ -17,7 +17,7 @@ brew upgrade
 brew tap homebrew/versions
 brew tap caskroom/fonts
 brew tap caskroom/versions
-brew tap homebrew/science
+brew tap brewsci/science
 
 # Caskroom installs we only want to dropbox once. They can't be updated
 # by brew at the moment
@@ -37,16 +37,12 @@ brew install caskroom/cask/brew-cask
 #brew cask install skitch
 #brew cask install rstudio
 #brew cask install dbvisualizer
-#brew cask install tableau
 #brew install caskroom/cask/xquartz
-#brew cask install rstudio
 #brew cask install intellij-idea
-#brew cask install caffeine
 #brew cask install postman
 #brew cask install slack
 #brew cask install bartender
 #brew cask install google-drive-file-stream
-#brew cask install virtualbox
 #brew cask install sizeup
 #brew cask install lingon-x
 #brew cask install franz
@@ -57,7 +53,6 @@ brew install caskroom/cask/brew-cask
 #brew cask install beyond-compare
 #brew cask install pycharm-ce
 #brew cask install fivedetails-flow
-#brew cask install snagit
 #brew cask install mactex
 #brew cask install cloudapp
 #brew cask install monodraw
