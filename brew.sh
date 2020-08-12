@@ -15,7 +15,7 @@ brew upgrade
 
 # Tap specialized repositories
 brew tap homebrew/versions
-brew tap caskroom/fonts
+brew tap homebrew/cask-fonts
 brew tap caskroom/versions
 brew tap brewsci/science
 
