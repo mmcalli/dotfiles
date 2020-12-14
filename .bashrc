@@ -48,4 +48,6 @@ if [ -f '/Users/mmcallister/google-cloud-sdk/path.bash.inc' ]; then source '/Use
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/mmcallister/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/mmcallister/google-cloud-sdk/completion.bash.inc'; fi
 export PATH=~/.rbenv/bin:${PATH}
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+export PATH="/usr/local/opt/curl/bin:$PATH"
 eval "$(rbenv init -)"
