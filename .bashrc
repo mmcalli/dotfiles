@@ -1,12 +1,3 @@
-# ----- Birdhouse Bootstrapper
-
-# Should come first in your /Users/mmcallister/.bashrc so it can be overridden.
-if test -L ~/.birdhouse/birdhouse_loader; then
-    source ~/.birdhouse/birdhouse_loader "/Users/mmcallister/Projects/birdhouse/lib" "/Users/mmcallister/.bashrc"
-fi
-
-# ----- Birdhouse Bootstrapper
-
 #LiquidPrompt
 if [ -f /usr/local/share/liquidprompt ]; then
 . /usr/local/share/liquidprompt
@@ -56,3 +47,5 @@ if [ -f '/Users/mmcallister/google-cloud-sdk/path.bash.inc' ]; then source '/Use
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/mmcallister/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/mmcallister/google-cloud-sdk/completion.bash.inc'; fi
+export PATH=~/.rbenv/bin:${PATH}
+eval "$(rbenv init -)"
