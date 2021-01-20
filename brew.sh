@@ -63,6 +63,8 @@ brew install caskroom/cask/brew-cask
 #brew cask install fantastical
 #brew cask install polycom-content
 #brew cask install webex-meetings
+#brew cask install datgrip
+#brew cask install zoom
 
 brew install maven
 brew install ansible
