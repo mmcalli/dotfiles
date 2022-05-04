@@ -14,62 +14,60 @@ brew update
 brew upgrade
 
 # Tap specialized repositories
-brew tap homebrew/versions
 brew tap homebrew/cask-fonts
-brew tap caskroom/versions
+brew tap homebrew/cask-versions
 brew tap brewsci/science
+brew tap mongodb/brew
 
 # Caskroom installs we only want to dropbox once. They can't be updated
 # by brew at the moment
 #
-brew install caskroom/cask/brew-cask
-#brew cask install font-inconsolata
-#brew cask install sublime-text
-#brew cask install iterm2
-#brew cask install evernote
-#brew install Caskroom/cask/java
-#brew cask install java7
-#brew cask install 1password
-#brew cask install google-chrome
-#brew cask install google-chrome-canary
-#brew cask install alfred
-#brew cask install dropbox
-#brew cask install skitch
-#brew cask install rstudio
-#brew cask install dbvisualizer
-#brew install caskroom/cask/xquartz
-#brew cask install intellij-idea
-#brew cask install postman
-#brew cask install slack
-#brew cask install bartender
-#brew cask install google-drive-file-stream
-#brew cask install sizeup
-#brew cask install lingon-x
-#brew cask install franz
-#brew cask install devcenter
-#brew cask install kitematic
-#brew cask install anaconda
-#brew cask install bettertouchtool
-#brew cask install beyond-compare
-#brew cask install pycharm-ce
-#brew cask install fivedetails-flow
-#brew cask install mactex
-#brew cask install cloudapp
-#brew cask install monodraw
-#brew cask install graphiql
-#brew cask install cisco-proximity
-#brew cask install graphql-playground
-#brew cask install flycut
-#brew cask install fantastical
-#brew cask install polycom-content
-#brew cask install webex-meetings
-#brew cask install datgrip
-#brew cask install zoom
+brew install homebrew/cask/brew-cask
+brew install font-inconsolata
+brew install sublime-text
+brew install iterm2
+brew install evernote
+brew install 1password
+brew install google-chrome
+#brew install google-chrome-canary
+brew install alfred
+brew install dropbox
+#brew install skitch
+#brew install rstudio
+#brew install dbvisualizer
+brew install homebrew/cask/xquartz
+brew install intellij-idea
+brew install postman
+#brew install slack
+brew install bartender
+#brew install google-drive-file-stream
+brew install sizeup
+brew install lingon-x
+#brew install franz
+#brew install devcenter
+#brew install kitematic
+#brew install anaconda
+brew install bettertouchtool
+brew install beyond-compare
+#brew install pycharm-ce
+#brew install fivedetails-flow
+#brew install mactex
+brew install cloudapp
+#brew install monodraw
+brew install graphiql
+brew install cisco-proximity
+brew install graphql-playground
+brew install flycut
+brew install fantastical
+brew install polycom-content
+#brew install webex-meetings
+#brew install datgrip
+#brew install zoom
 
 brew install maven
-brew install ansible
-brew install ant
-brew install r
+#brew install ansible
+#brew install ant
+#brew install r
 brew install jmeter
 brew install git
 brew install liquidprompt
@@ -77,8 +75,8 @@ brew install awscli
 brew install aws-shell
 brew install wget
 brew install jq
-brew install dark-mode
-brew install cassandra
+#brew install dark-mode
+#brew install cassandra
 brew install python
 brew install terraform
 brew install terraform@0.11
@@ -92,33 +90,50 @@ brew install tldr
 brew install avro-tools
 brew install bash
 brew install bash-completion@2
-brew install geoip
-brew install geoipupdate
+#brew install geoip
+#brew install geoipupdate
 brew install htop
-brew install ponysay
+#brew install ponysay
 brew install watch
 brew install parquet-tools
-brew install grafana
-brew install rsync
-brew install scala --with-docs --with-src
-brew install sbt
-brew install exercism
+#brew install grafana
+#brew install rsync
+#brew install scala --with-docs --with-src
+#brew install sbt
+#brew install exercism
 brew install moreutils --without-errno --without-parallel --without-ts
 brew install miller
-brew install elasticsearch
-brew install kibana
+#brew install elasticsearch
+#brew install kibana
 brew install teleport
 brew install bat
 brew install lz4
 brew install csvkit
+brew install jenv
+brew install java
+brew install AdoptOpenJDK/openjdk/adoptopenjdk{8,11}
+brew install asciinema
+brew install openapi-generator
+brew install mongodb-community@4.2
+brew install mongodb-database-tools
+brew install docker-credential-helper
+brew install minikube
+brew install kubectl
+brew install helm
+brew install lens
+brew install sshuttle
+brew install mysql
+brew install mysqlworkbench
+brew install adr-tools
+brew install ossp-uuid
 
 # Add the kairosdb grafana plugin
 
-grafana-cli plugins install grafana-kairosdb-datasource
+#grafana-cli plugins install grafana-kairosdb-datasource
 
 # Update the geoip database
 
-geoipupdate
+#geoipupdate
 
 # Remove outdated versions from the cellar.
 brew cleanup
@@ -130,5 +145,5 @@ sudo bash -c "echo /usr/local/bin/bash >> /private/etc/shells"
 chsh -s /usr/local/bin/bash
 
 # install elasticsearch X-Pack
-cd /usr/local/Cellar/elasticsearch/6.2.4/
-bin/elasticsearch-plugin install x-pack
+#cd /usr/local/Cellar/elasticsearch/6.2.4/
+#bin/elasticsearch-plugin install x-pack
