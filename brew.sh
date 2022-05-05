@@ -139,10 +139,10 @@ brew install ossp-uuid
 brew cleanup
 
 # Add the new shell to the list of legit shells
-sudo bash -c "echo /usr/local/bin/bash >> /private/etc/shells"
+sudo bash -c "echo /opt/homebrew/bin/bash >> /private/etc/shells"
 
 # Change the shell for the user
-chsh -s /usr/local/bin/bash
+chsh -s /opt/homebrew/bin/bash
 
 # install elasticsearch X-Pack
 #cd /usr/local/Cellar/elasticsearch/6.2.4/
