@@ -1,11 +1,9 @@
-#LiquidPrompt
-if [ -f /usr/local/share/liquidprompt ]; then
-. /usr/local/share/liquidprompt
-fi
+#Adds Homebrew to path
+eval $(/opt/homebrew/bin/brew shellenv)
 
 #Bash Completion
 if [ -f /usr/local/share/bash-completion/bash_completion ]; then
-. /usr/local/share/bash-completion/bash_completion
+   . /usr/local/share/bash-completion/bash_completion
 fi
 
 PATH=/usr/local/opt/terraform@0.11/bin:$PATH:~/bin/confluent/current/bin
@@ -58,7 +56,14 @@ export PATH="/usr/local/opt/curl/bin:$PATH"
 
 #jEnv configuration
 export PATH="$HOME/.jenv/bin:$PATH"
+echo "Before jenv init"
 eval "$(jenv init -)"
+echo "After jenv init"
 
 #maven installed directory
 export M2_HOME=/usr/local/opt/maven/libexec
+
+#LiquidPrompt
+if [ -f /opt/homebrew/share/liquidprompt ]; then
+   . /opt/homebrew/share/liquidprompt
+fi
