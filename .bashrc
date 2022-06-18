@@ -56,12 +56,18 @@ export PATH="/usr/local/opt/curl/bin:$PATH"
 
 #jEnv configuration
 export PATH="$HOME/.jenv/bin:$PATH"
-echo "Before jenv init"
 eval "$(jenv init -)"
-echo "After jenv init"
 
 #maven installed directory
 export M2_HOME=/usr/local/opt/maven/libexec
+
+#Setup pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+#Make homebrew and pyenv work nicely together
+alias brew="env PATH=${PATH//$(pyenv root)\/shims:/} brew"
 
 #LiquidPrompt
 if [ -f /opt/homebrew/share/liquidprompt ]; then
