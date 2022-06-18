@@ -95,7 +95,7 @@ brew install bash-completion@2
 brew install htop
 #brew install ponysay
 brew install watch
-brew install parquet-tools
+brew install parquet-cli
 #brew install grafana
 #brew install rsync
 #brew install scala --with-docs --with-src
