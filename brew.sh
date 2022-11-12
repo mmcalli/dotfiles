@@ -63,6 +63,7 @@ brew install polycom-content
 #brew install webex-meetings
 #brew install datgrip
 #brew install zoom
+brew install descript
 
 brew install maven
 #brew install ansible
