@@ -69,6 +69,9 @@ eval "$(pyenv init -)"
 #Make homebrew and pyenv work nicely together
 alias brew="env PATH=${PATH//$(pyenv root)\/shims:/} brew"
 
+#use homebrew version of unzip
+export PATH="/opt/homebrew/opt/unzip/bin:$PATH"
+
 #LiquidPrompt
 if [ -f /opt/homebrew/share/liquidprompt ]; then
    . /opt/homebrew/share/liquidprompt
