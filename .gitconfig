@@ -36,17 +36,17 @@
 	tc = tag --contains
 	mt = mergetool
 [diff]
-	tool = bc3
+	tool = bcomp
 [user]
 	name = Michael McAllister
 	email = michael@pairofsixes.com
 [merge]
-	tool = bc3
-[mergetool "bc3"]
-	trustExitCode = true
+	tool = bcomp
 [branch]
 	autosetuprebase = always
 [push]
 	default = simple
 [credential]
 	helper = osxkeychain
+[mergetool "bcomp"]
+	trustExitCode = true

@@ -1,12 +1,18 @@
-#Adds Homebrew to path
-eval $(/opt/homebrew/bin/brew shellenv)
-
-#Bash Completion
-if [ -f /usr/local/share/bash-completion/bash_completion ]; then
-   . /usr/local/share/bash-completion/bash_completion
+#LiquidPrompt
+#if [ -f /usr/local/share/liquidprompt ]; then
+#. /usr/local/share/liquidprompt
+#fi
+if [ -f /opt/homebrew/share/liquidprompt ]; then
+  . /opt/homebrew/share/liquidprompt
 fi
 
-PATH=/usr/local/opt/terraform@0.11/bin:$PATH:~/bin/confluent/current/bin
+#Bash Completion
+#if [ -f /usr/local/share/bash-completion/bash_completion ]; then
+#. /usr/local/share/bash-completion/bash_completion
+#fi
+  [[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
+
+PATH=/usr/local/opt/terraform@0.11/bin:$PATH:~/bin
 
 #Add a config alias to maintain dotfiles repo
 alias config='git --git-dir=/Users/mmcallister/.cfg/ --work-tree=/Users/mmcallister'
@@ -21,7 +27,10 @@ alias ls='ls -lah'
 alias gl='git log --pretty=oneline'
 
 #Alias gbd to delete local git branchs no longer on remote
-alias gbd='git fetch -p && git branch -vv | awk '"'"'/: gone]/{print $1}'"'"' | xargs git branch -d'
+alias gbd='git fetch -p && git branch -vv | awk '"'"'/: gone]/{print $1}'"'"' | xargs git branch -D'
+
+#Alias kb to kill Bartender 6 processes
+alias kb='pkill -f "Bartender 6"'
 
 # Let the compiler know where OpenSSL is
 export LDFLAGS=-L/usr/local/opt/openssl/lib
@@ -55,24 +64,29 @@ export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 export PATH="/usr/local/opt/curl/bin:$PATH"
 
 #jEnv configuration
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
+#export PATH="/opt/homebrew/bin:$PATH"
+#eval "$(jenv init -)"
+
+# Teleport 10.3 specific path
+#export PATH="/usr/local/opt/teleport@10.3/bin:$PATH"
 
 #maven installed directory
 export M2_HOME=/usr/local/opt/maven/libexec
 
-#Setup pyenv
+# Setup for pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
-#Make homebrew and pyenv work nicely together
-alias brew="env PATH=${PATH//$(pyenv root)\/shims:/} brew"
+# Run script that contains API tokens
+source mytokens.sh
 
-#use homebrew version of unzip
-export PATH="/opt/homebrew/opt/unzip/bin:$PATH"
-
-#LiquidPrompt
-if [ -f /opt/homebrew/share/liquidprompt ]; then
-   . /opt/homebrew/share/liquidprompt
+# Make Homebrew and pyenv work nicely together
+alias brew='env PATH="${PATH//$(pyenv root)/shims:/}" brew'
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+  eval "$(pyenv virtualenv-init -)"
 fi
+
+# Stop apple preaching at me to use zsh
+export BASH_SILENCE_DEPRECATION_WARNING=1

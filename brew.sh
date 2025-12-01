@@ -3,9 +3,9 @@
 # Install command-line tools using Homebrew.
 # To install Homebrew, execute the following
 #
-# /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# To research Homebrew formulae, visit http://braumeister.org/
+# To research Homebrew formulae, visit https://formulae.brew.sh
 
 # Make sure we’re using the latest Homebrew.
 brew update
@@ -14,15 +14,15 @@ brew update
 brew upgrade
 
 # Tap specialized repositories
-brew tap homebrew/cask-fonts
-brew tap homebrew/cask-versions
+#brew tap homebrew/cask-fonts
+#brew tap homebrew/cask-versions
 brew tap brewsci/science
 brew tap mongodb/brew
 
 # Caskroom installs we only want to dropbox once. They can't be updated
 # by brew at the moment
 #
-brew install homebrew/cask/brew-cask
+#brew install homebrew/cask/brew-cask
 brew install font-inconsolata
 brew install sublime-text
 brew install iterm2
@@ -63,7 +63,7 @@ brew install polycom-content
 #brew install webex-meetings
 #brew install datgrip
 #brew install zoom
-brew install descript
+brew install notion
 
 brew install maven
 #brew install ansible
@@ -96,7 +96,13 @@ brew install bash-completion@2
 brew install htop
 #brew install ponysay
 brew install watch
+
+# This cli is invoked using the command `parquet``
 brew install parquet-cli
+# An alternative commandline tool for parquet. See:-
+# https://github.com/manojkarthick/pqrs
+brew install manojkarthick/tap/pqrs
+
 #brew install grafana
 #brew install rsync
 #brew install scala --with-docs --with-src
@@ -106,27 +112,61 @@ brew install moreutils --without-errno --without-parallel --without-ts
 brew install miller
 #brew install elasticsearch
 #brew install kibana
-brew install teleport
 brew install bat
 brew install lz4
 brew install csvkit
 brew install jenv
 brew install java
-brew install AdoptOpenJDK/openjdk/adoptopenjdk{8,11}
+# AdoptOpenJDK has been discontinued and replaced by temurin
+#brew install AdoptOpenJDK/openjdk/adoptopenjdk{8,11}
+brew install --cask temurin{8,11}
 brew install asciinema
 brew install openapi-generator
 brew install mongodb-community@4.2
 brew install mongodb-database-tools
+# I've been installing this via their website
+# brew install homebrew/cask/docker
 brew install docker-credential-helper
+# local kubernetes installation
+# Note, difference between using kind vs minikube is documented here:-
+# https://shipit.dev/posts/minikube-vs-kind-vs-k3s.html
+brew install kind
 brew install minikube
 brew install kubectl
 brew install helm
 brew install lens
 brew install sshuttle
+# back to your normal programming
 brew install mysql
 brew install mysqlworkbench
 brew install adr-tools
 brew install ossp-uuid
+brew install mkdocs
+brew install openssl
+brew install zlib
+brew install tcl-tk
+
+brew install descript
+brew install soundsource
+brew install audio-hijack
+# zight may need manual install. We want at least v1.8.2
+brew install zight
+brew install grammarly-desktop
+#brew install jabra-direct
+brew install logi-options-plus
+brew install clocker
+brew install discord
+brew install pdf-expert
+brew install jordanbaird-ice
+
+# Installing specific version of teleport needed for RCP, and taken from 
+# expedia specific tap
+#brew install teleport@10.3
+
+# Instructions for setting up and managing python:-
+# https://raycent.medium.com/managing-python-on-macos-the-clean-way-7673cab874f6
+brew install pyenv
+brew install pyenv-virtualenv
 
 # Add the kairosdb grafana plugin
 
@@ -135,6 +175,9 @@ brew install ossp-uuid
 # Update the geoip database
 
 #geoipupdate
+
+# DuckDB
+brew install duckdb
 
 # Remove outdated versions from the cellar.
 brew cleanup
