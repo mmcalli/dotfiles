@@ -41,7 +41,12 @@ brew install postman
 #brew install slack
 brew install bartender
 #brew install google-drive-file-stream
-brew install sizeup
+
+# Sizeup requires rosetta, and hasn't been updated for a long time.
+# As such, I'm choosing to migrate to moom
+# brew install sizeup
+brew install moom
+
 brew install lingon-x
 #brew install franz
 #brew install devcenter
