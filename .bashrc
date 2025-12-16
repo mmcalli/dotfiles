@@ -90,3 +90,6 @@ fi
 
 # Stop apple preaching at me to use zsh
 export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# Add path for cursor agent
+export PATH="$HOME/.local/bin:$PATH"

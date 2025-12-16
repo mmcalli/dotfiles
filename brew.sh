@@ -184,6 +184,12 @@ brew install pyenv-virtualenv
 # DuckDB
 brew install duckdb
 
+# AI development environment
+brew install warp
+brew install cursor
+# Cursor Agent isn't in homebrew yet, so need to curl it
+curl https://cursor.com/install -fsSL | bash
+
 # Remove outdated versions from the cellar.
 brew cleanup
 
