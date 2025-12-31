@@ -1,10 +1,7 @@
-#LiquidPrompt
-#if [ -f /usr/local/share/liquidprompt ]; then
-#. /usr/local/share/liquidprompt
+#LiquidPrompt (commenting out as we are transitioning to starship)
+#if [ -f /opt/homebrew/share/liquidprompt ]; then
+#  . /opt/homebrew/share/liquidprompt
 #fi
-if [ -f /opt/homebrew/share/liquidprompt ]; then
-  . /opt/homebrew/share/liquidprompt
-fi
 
 #Bash Completion
 #if [ -f /usr/local/share/bash-completion/bash_completion ]; then
@@ -93,3 +90,6 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # Add path for cursor agent
 export PATH="$HOME/.local/bin:$PATH"
+
+# Get Starship going for bash
+eval "$(starship init bash)"

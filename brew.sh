@@ -76,7 +76,11 @@ brew install maven
 #brew install r
 brew install jmeter
 brew install git
-brew install liquidprompt
+
+# We are in a transition phase migrating from liquidprompt to starship
+#brew install liquidprompt
+brew install starship
+
 brew install awscli
 brew install aws-shell
 brew install wget
@@ -172,6 +176,8 @@ brew install jordanbaird-ice
 # https://raycent.medium.com/managing-python-on-macos-the-clean-way-7673cab874f6
 brew install pyenv
 brew install pyenv-virtualenv
+# I may be migrating to UV
+brew install uv
 
 # Add the kairosdb grafana plugin
 
